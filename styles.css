@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+
+#nomeSite {
+    margin-top: 5px;
+}
+
+section h2 {
+    margin: 50px 2px;
+}
+
+header {
+    background: linear-gradient(to right, #343a40, #1c2022);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.carros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 600px;
+    max-width: 360px;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+article img {
+    max-width: 100%;
+    margin-top: 20px;
+    display: block;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    article {
+        width: calc(100% - 20px);
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        text-align: center;
+    }
+}
