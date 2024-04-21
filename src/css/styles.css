@@ -2,10 +2,10 @@
     --padding-button: .8rem 1.5rem;
     --bg-btn: transparent;
     --border-radius-btn: 22px;
-
+    --color-button-hover: rgb(91, 134, 235);
     --font-size: 17px;
 
-    --secundary-color: rgb(141, 124, 157);
+    --secundary-color: rgb(77, 111, 202);
 }
 
 header {
@@ -50,7 +50,7 @@ header div{
 header div button:last-child {
     border: .8px solid var(--secundary-color);
     border-radius: var(--border-radius-btn);
-
+    color: var(--secundary-color);
 }
 
 header div button:last-child:hover {
@@ -81,6 +81,11 @@ main {
     border-radius: 50%;
     background-color: var(--secundary-color);
 }
+
+.search-container button:hover{
+    background-color: var(--color-button-hover);
+}
+
 
 .container-filter {
     display: flex;
@@ -144,22 +149,39 @@ main {
     height: 270px;
     max-height:270px;
     background-color: rgb(182, 182, 182);
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.361);
 }
 
 .img-vehicle img{
     width: 100%;
     height: 100%;
+    transition: all 200ms ease-in;
 }
+
+.img-vehicle img:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+
+}
+
 
 .btn-add {
     display: flex;
     justify-content: center;
+    gap: .4rem;
     background-color: var(--secundary-color);
     width: 100%;
     box-shadow: inset 4px 0 4px rgba(46, 46, 46, 0.127);
 }
 
+.btn-add:active{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.709);
+}
 
+.btn-add:hover{
+    background-color: var(--color-button-hover);
+}
 
 footer{
     margin-top: 7rem;
