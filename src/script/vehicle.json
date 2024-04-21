@@ -1,0 +1,46 @@
+{
+    "car":[
+        {
+            "name":"gol",
+            "img":"https://img.olx.com.br/images/18/184377194152050.jpg",
+            "year":1996,
+            "price":39.900,
+            "door":2,
+            "km":27500,
+            "fuel":"gasolina"
+        },
+        {
+            "name":"Volkswagen",
+            "img":"https://img.olx.com.br/images/27/277422038475269.jpg",
+            "year":2023,
+            "price":56.920,
+            "door":4,
+            "fuel":"flex"
+        },
+        {
+            "name":"corolla gli",
+            "img":"https://img.olx.com.br/images/92/926456030549590.jpg",
+            "year":2013,
+            "price":63.990,
+            "door":4,
+            "km":123000
+        },
+        {
+            "name":"prisma",
+            "img":"https://img.olx.com.br/images/12/129419156255634.jpg",
+            "year":2012,
+            "price":29.900,
+            "door":4,
+            "km":119000
+
+        }
+    
+    ],
+    "motos":[
+        {
+            
+        }
+    ]
+}
+
+ 

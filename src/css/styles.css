@@ -58,7 +58,8 @@ header div button:last-child:hover {
 }
 
 main {
-    max-width: 1210px;
+    box-sizing: border-box;
+    max-width: 1260px;
     margin: auto;
 }
 
@@ -115,9 +116,9 @@ main {
 }
 
 .list-vehicle{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .vehicle {
