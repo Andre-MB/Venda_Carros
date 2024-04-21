@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-font-feature-settings: inherit;
+}
+
+.active{
+    border-bottom: 2.5px solid var(--secundary-color);
+    color: black;
+    font-weight: 700;
+    padding: .4rem;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    padding: var(--padding-button);
+    box-sizing: border-box;
+
+}
