@@ -112,13 +112,56 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform .5s, height .2s ease;
+}
 
+.wrapper.remove-popup {
+    transform: scale(0);
 }
 
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
 
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--strong-color);
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .form-box h2 {
@@ -208,3 +251,23 @@ header {
     color:#fff;
     font-weight: 500;
 }
+
+.login-register {
+    font-size: .9em;
+    color: var(--strong-color);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: var(--strong-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+
