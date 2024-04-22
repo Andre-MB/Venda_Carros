@@ -1,6 +1,11 @@
 :root{
     --primary:#7fcbe3;
     --second:#7fdce3;
+    --strong-color:#0e3e41;
+    --background: background-color: #A2A4AA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23A2A4AA'/%3E%3Cstop offset='1' stop-color='%23E8F3FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F8FFEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23F8FFEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23F8FFEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23F8FFEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;;
 }
 
 
@@ -16,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #e7e7e7;
+    background: var();
     background-size: cover;
     background-position: center;
 }
@@ -27,24 +32,29 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .logo {
+    position: relative;
     font-size: 2em;
-    color: #000000;
+    color: var(--strong-color);
     user-select: none;
     padding: 14px 0;
 }
-
+.navigation{
+    position: relative;
+    
+}
 .navigation a {
     position: relative;
-    top: 22px;
+    top: 9px;
     font-size: 1.1em;
     color: #000000;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+
 
 }
 
@@ -55,7 +65,7 @@ header {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: var(--primary);
+    background: var(--strong-color);
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -68,19 +78,19 @@ header {
 }
 
 .navigation .btnLogin-popup {
-    position: fixed;
+    position: relative;
     top: 9px;
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #8d8d8d;
+    border: 2px solid var(--strong-color);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
     transition: .5s;
     margin-left: 40px;
-    color: #8d8d8d;
+    color: var(--strong-color);
     font-weight: 500;
 }
 
@@ -88,4 +98,113 @@ header {
     background-color:var(--second);
     color: #fff;
     border: 2px solid var(--second);
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px var(--strong-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: var(--strong-color);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--strong-color);
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--strong-color);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--strong-color);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--strong-color);
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: var(--strong-color);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input {
+    accent-color: var(--strong-color);
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    color: var(--strong-color);
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: var(--strong-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color:#fff;
+    font-weight: 500;
 }
