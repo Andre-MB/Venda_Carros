@@ -7,32 +7,33 @@ const searchInput = document.querySelector('#search-input');
 
 const nameCategory = document.querySelector('#name-category')
 
-    nav[0].classList.add('active')
+nav[0].classList.add('active')
 
-nav.forEach((e)=>{
-    e.addEventListener('click',()=>{
+nav.forEach((e) => {
+    e.addEventListener('click', () => {
         document.querySelector('.active')?.classList.remove('active')
         e.classList.add('active')
-        if(e == nav[0]){
+        if (e == nav[0]) {
             nameCategory.innerHTML = 'Catálogos de Carros';
-        }else if(e == nav[1]){
+        } else if (e == nav[1]) {
             nameCategory.innerHTML = 'Catálogos de Motos';
-        }else if(e == nav[2]){
+        } else if (e == nav[2]) {
             nameCategory.innerHTML = 'Catálogos de Bicicletas';
         }
     })
 })
 
 
-function api(url){
+function api(url) {
 
     const container = document.querySelector('.list-vehicle');
     const div = document.createElement('div')
     div.classList.add('info-vehicle')
+
     fetch(url).then(response => response.json())
-    .then(data => {
-        data.car.map((e)=>{
-            div.innerHTML += `
+        .then(data => {
+            data.car.map((e) => {
+                div.innerHTML += `
             <article class="vehicle">
                     <h3 class="name-vehicle">${e.name}</h3>
                     <div class="img-vehicle">
@@ -48,27 +49,28 @@ function api(url){
                     </button>
                 </article>
                     `
-                })
-                container.appendChild(div)
+            })
+            container.appendChild(div)
 
-    })
+        })
 }
 
-    document.querySelector('.btn-search-input').addEventListener('click',()=>{
-        fetch('/src/script/vehicle.json').then(response => response.json())
-        .then(data =>{
-            data.car.map((e)=>{
-                if(searchInput.value == e.name){
-                   return console.log(`There's this vehicle with name ${searchInput.value}`)
-                }else{
-                   return console.log(`There ins't this vehicle with name ${searchInput.value}`)
+
+document.querySelector('.btn-search-input').addEventListener('click', () => {
+    fetch('/src/script/vehicle.json').then(response => response.json())
+        .then(data => {
+            data.car.map((e) => {
+                if (searchInput.value == e.name) {
+                    return console.log(`There's this vehicle with name ${searchInput.value}`)
+                } else {
+                    return console.log(`There ins't this vehicle with name ${searchInput.value}`)
                 }
             })
         })
-    })
+})
 
 const btnSignIn = document.querySelector('#sign-in');
-btnSignIn.addEventListener('click',()=>{
+btnSignIn.addEventListener('click', () => {
     window.location = '/login.html'
 
 })
