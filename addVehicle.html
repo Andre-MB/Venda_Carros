@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Vendas de Carros</title>
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/resert.css">
+    <link rel="stylesheet" href="src/css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header>
+    <h1 id="logo-name">V/Carros</h1>
+    <nav>
+        <a class="nav-itens active" href="#add">Adicionar</a>
+    </nav>
+    <div>
+        <div>
+            <a href="index.html"class="bi bi-x-lg"></a>
+        </div>
+        <i class="bi bi-three-dots-vertical menu-burguer"></i>
+    </div>
+</header>
+
+<main>
+    <h1>Adicione seu veículo aqui</h1>
+    <form action="">
+        <label for="name">Qual é a marca do seu veículo?</label>
+        <input type="text" placeholder="Name" id="name">
+        <label for="door">Quantas Portas</label>
+        <ul>
+            <li>
+                <input type="radio" name="door" id="zero-door"> 0 portas
+                <input type="radio" name="door" id="two-door"> 2 portas
+                <input type="radio" name="door" id="four-door"> 4 portas
+            </li>
+        </ul>
+        <label for="fuel">Combustível</label>
+        <select name="option-fuel" id="fuel">
+            <option value="">Selecionar</option>
+            <option value="">Gasolina</option>
+            <option value="">Diesel</option>
+            <option value="">Flex</option>
+            <option value="">Álcool</option>
+            <option value="">Elétrico</option>
+        </select>
+        <label for="color">Cor</label>
+        <select name="color" id="color">
+            <option value="">Selecionar</option>
+            <option value="">Branco</option>
+            <option value="">Preto</option>
+            <option value="">Prata</option>
+            <option value="">Cinza</option>
+            <option value="">Vermelho</option>
+            <option value="">Amarelo</option>
+            <option value="">Azul</option>
+            <option value="">Laranja</option>
+            <option value="">Outros</option>
+        </select>
+        <label for="type-vehicle">Tipo de Veículo</label>
+        <select name="" id="type-vehicle">
+            <option value="">Selecionar</option>
+            <option value="">Carro</option>
+            <option value="">Moto</option>
+            <option value="">Bicicleta</option>
+
+        </select>    
+        <span><i> Identificação do veículo</i></span>
+        <label for="name-placa">Placa do veículo</label>
+        <input type="text" id="name-placa">
+        <span><i> Condição do veículo</i></span>
+        <label for="km">Quilometragem</label>
+        <input type="text" id="km">
+        <sup>Ex:50.500</sup>
+
+        <span><i> Identificação do veículo</i></span>
+
+        <label for="title">Título</label>
+        <input type="text">
+        <sup>Exemplo: Fiat Argo</sup>
+
+        <label for="description">Descrição</label>
+        <textarea name="" id="description" cols="30" rows="10"></textarea>
+        <sup><i></i>Coloque detalhes relevantes do veículo que ainda não foram mencionados</sup> 
+        
+        <span>Fotos</i></span>
+        <sub>Adicione até 10fotos</sub>
+        <input type="file" src="" alt="">
+
+        <label for="local">Localização</label>
+        <input type="text" placeholder="CEP">
+
+        <label for="price">Preço</label>
+        <input type="text">
+
+        <button>Enviar</button>
+
+    </form>
+</main>
+    
+</body>

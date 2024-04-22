@@ -39,13 +39,22 @@ header div{
     gap: .4rem;
 }
 
+header div div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 header div div button:last-child {
     border: .8px solid var(--secundary-color);
-    border-radius: var(--border-radius-btn);
+    border-radius:var(--border-radius-btn);
     color: var(--secundary-color);
+    padding: .6rem;
+    font-size: 15px;
 }
 
 header div div button:last-child:hover {
+    transform: translate(5px);
     color: var(--secundary-color);
 }
 

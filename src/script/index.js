@@ -12,11 +12,11 @@ nav.forEach((e)=>{
         document.querySelector('.active')?.classList.remove('active')
         e.classList.add('active')
         if(e == nav[0]){
-            nameCategory.innerHTML = 'Catalogo Carro';
+            nameCategory.innerHTML = 'Catálogos de Carros';
         }else if(e == nav[1]){
-            nameCategory.innerHTML = 'Catalogo Motos';
+            nameCategory.innerHTML = 'Catálogos de Motos';
         }else if(e == nav[2]){
-            nameCategory.innerHTML = 'Catalogo Bicicletas';
+            nameCategory.innerHTML = 'Catálogos de Bicicletas';
         }
     })
 })
@@ -37,11 +37,11 @@ function api(url){
                         <img src="${e.img}" alt="">
                     </div>
                     <ul class="info-vehicle">
-                        <li><i class="material-symbols-outlined">today</i>${e.year}</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ ${e.price.toFixed(3)}</li>
+                        <li><i class="bi bi-calendar4-week"></i>${e.year}</li>
+                        <li><i class="bi bi-currency-dollar"></i>${e.price.toFixed(3)}</li>
                     </ul>
                     <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
+                    <i class="bi bi-chevron-compact-right"></i>
                         ver mais
                     </button>
                 </article>

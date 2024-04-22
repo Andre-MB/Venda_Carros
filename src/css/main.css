@@ -42,6 +42,7 @@ main {
 
 .container-filter span{
     display: flex;
+    align-items: center;
     gap: .8rem;
 }
 
@@ -56,18 +57,12 @@ main {
 }
 
 #name-category {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .container-vehicle {
     margin-top: 1rem;
-}
-
-.list-vehicle{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
 }
 
 .vehicle {
@@ -87,8 +82,8 @@ main {
 
 .vehicle ul li{
     display: flex;
-    gap: .5rem;
-    padding:.8rem 0 ;
+    gap: .4rem;
+    padding:1rem 0 ;
     font-size: 18px;
     font-weight: 500;
 }
@@ -111,7 +106,6 @@ main {
     width: 100%;
     height: 270px;
     max-height:270px;
-    background-color: rgb(182, 182, 182);
     overflow: hidden;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.361);
 }
@@ -125,7 +119,6 @@ main {
 .img-vehicle img:hover{
     cursor: pointer;
     transform:scale(1.1);
-
 }
 
 
@@ -135,6 +128,8 @@ main {
     gap: .4rem;
     background-color: var(--secundary-color);
     width: 100%;
+    border-radius: var(--border-radius-btn);
+    padding: var(--padding-button);
     box-shadow: inset 4px 0 4px rgba(46, 46, 46, 0.127);
 }
 

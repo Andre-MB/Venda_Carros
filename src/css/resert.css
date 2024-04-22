@@ -12,8 +12,8 @@
 :root {
     --padding-button: .8rem 1.5rem;
     --bg-btn: transparent;
-    --border-radius-btn: 22px;
-    --color-button-hover: rgb(91, 134, 235);
+    --border-radius-btn: 5px;
+    --color-button-hover: rgb(43, 106, 255);
     --font-size: 17px;
 
     --secundary-color: rgb(88, 132, 253);
@@ -29,7 +29,6 @@
 button{
     all: unset;
     cursor: pointer;
-    padding: var(--padding-button);
     box-sizing: border-box;
 
 }
