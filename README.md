@@ -30,10 +30,11 @@ Para rodar o Vendas de Carros localmente, siga estes passos:
 
 Após abrir o `index.html` no navegador, a aplicação será carregada e pronta para ser usada. Navegue entre as diferentes categorias de veículos através das abas na parte superior da página. Utilize os filtros disponíveis para refinar sua busca.
 
-## Contribuidores
+## Desenvolvedores
 
 - [**Gabriel Politano**](https://github.com/gabrielcpolitano) - Desenvolvedor Front-end
 - [**Giselle Cristina**](https://github.com/Giselle2023) - Desenvolvedora Front-end
+- [**Andre-MB**](https://github.com/Andre-MB) - Desenvolvedora Back-end
 
 ## Contribuições
 
