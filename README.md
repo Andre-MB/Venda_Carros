@@ -34,6 +34,7 @@ Após abrir o `index.html` no navegador, a aplicação será carregada e pronta 
 
 - [**Gabriel Politano**](https://github.com/gabrielcpolitano) - Desenvolvedor Front-end
 - [**Giselle Cristina**](https://github.com/Giselle2023) - Desenvolvedora Front-end
+- [**Andre-MB**](https://github.com/Andre-MB) - Desenvolvedora Back-end
 
 ## Contribuições
 
