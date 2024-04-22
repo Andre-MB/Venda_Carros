@@ -38,15 +38,14 @@ function api(url){
                     </div>
                     <ul class="info-vehicle">
                         <li><i class="material-symbols-outlined">today</i>${e.year}</li>
-                        <li><i class="material-symbols-outlined">payments</i> R${e.price}</li>
+                        <li><i class="material-symbols-outlined">payments</i> R$ ${e.price.toFixed(3)}</li>
                     </ul>
                     <button class="btn-add">
                         <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
+                        ver mais
                     </button>
                 </article>
                     `
-                    console.log(e)
                 })
                 
                 container.appendChild(div)

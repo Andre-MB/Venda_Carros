@@ -1,0 +1,48 @@
+
+@media (max-width: 768px) {
+    header nav{
+        display: none;
+        justify-content: space-between;
+
+    }
+    header{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    header div{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+  
+    .menu-burguer{
+        display: block;
+    }
+    .container-filter{
+        flex-direction: column;
+    }
+    .container-filter span{
+        display: none;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .search-container input{
+        width: 250px;
+    }
+   
+}
+
+@media  screen and (max-width:400px) {
+    
+    header div div {
+        display: none;
+    }
+    .container-filter{
+        margin-top: 5rem;
+    }
+    .vehicle{
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+
+footer{
+    position:relative;
+    bottom:0 ;
+    padding: 2rem;
+    width: 100%;
+    background: rgb(14, 30, 57);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+
+footer h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+footer div{
+    display: flex;
+    gap: 2rem;
+}

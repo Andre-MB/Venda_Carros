@@ -1,0 +1,74 @@
+:root{
+    --font-size-dialog:18px;
+}
+dialog{
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    padding: 2.5rem;
+    width: 620px;
+    height: 400px;
+}
+
+dialog::backdrop{
+    background-color: rgba(17, 16, 16, 0.59);
+    margin: auto;
+
+}
+
+.dialog-close{
+    background-color: rgb(78, 137, 239);
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+.show{
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p{
+    font-size: 20px;
+}
+
+.submit-form {
+    background-color: rgb(53, 99, 206);
+    color: white;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.dialog-info{
+    display: flex;
+    flex-direction:column ;
+    gap: .5rem;
+}
+
+.dialog-info p{
+    font-size: var(--font-size-dialog);
+    margin-top: 1rem;
+
+}
+
+.dialog-info h4{
+    font-size:var(--font-size-dialog) ;
+    font-weight: 400;
+}
+
+.dialog-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.dialog-info ul li{
+    display: flex;
+    gap: 1rem;
+}

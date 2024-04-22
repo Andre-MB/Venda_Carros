@@ -9,10 +9,20 @@
     -webkit-font-feature-settings: inherit;
 }
 
+:root {
+    --padding-button: .8rem 1.5rem;
+    --bg-btn: transparent;
+    --border-radius-btn: 22px;
+    --color-button-hover: rgb(91, 134, 235);
+    --font-size: 17px;
+
+    --secundary-color: rgb(88, 132, 253);
+}
+
 .active{
-    border-bottom: 2.5px solid var(--secundary-color);
+    border-bottom: 3px solid var(--secundary-color);
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     padding: .4rem;
 }
 

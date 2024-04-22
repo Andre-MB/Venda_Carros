@@ -1,7 +1,7 @@
 {
     "car":[
         {
-            "name":"gol",
+            "name":"Gol",
             "img":"https://img.olx.com.br/images/18/184377194152050.jpg",
             "year":1996,
             "price":39.900,
@@ -18,7 +18,7 @@
             "fuel":"flex"
         },
         {
-            "name":"corolla gli",
+            "name":"Corolla Gli",
             "img":"https://img.olx.com.br/images/92/926456030549590.jpg",
             "year":2013,
             "price":63.990,
@@ -26,13 +26,85 @@
             "km":123000
         },
         {
-            "name":"prisma",
+            "name":"Prisma",
             "img":"https://img.olx.com.br/images/12/129419156255634.jpg",
             "year":2012,
             "price":29.900,
             "door":4,
             "km":119000
 
+        },
+        {
+            "name":"Fiat uno Mille",
+            "img":"https://img.olx.com.br/images/52/523412756548637.jpg",
+            "year":2013,
+            "price":29.900,
+            "door":4,
+            "km":115000
+        },
+        {
+            "name":"Chevrolet Onix",
+            "img":"https://img.olx.com.br/images/93/930452271375088.jpg",
+            "year":2023,
+            "price":79.990,
+            "door":4,
+            "km":32000
+        },
+        {
+            "name":"Citroen C3",
+            "img":"https://img.olx.com.br/images/45/454452033680680.jpg",
+            "year":2013,
+            "price":42.900,
+            "door":4,
+            "km":78000
+        },
+        {
+            "name":"Jeep Renegade",
+            "img":"https://img.olx.com.br/images/69/699461628962238.jpg",
+            "year":2021,
+            "price":92.290,
+            "door":4,
+            "km":38013
+        },
+        {
+            "name":"Voyage Trend",
+            "img":"https://img.olx.com.br/images/37/378410260123532.jpg",
+            "year":2010,
+            "price":31.999,
+            "door":4,
+            "km":89000
+        },
+        {
+            "name":"Uno Mille",
+            "img":"https://img.olx.com.br/images/45/457416147797473.jpg",
+            "year":2008,
+            "price":17.900,
+            "door":2,
+            "km":319000
+        },
+        {
+            "name":"Celta",
+            "img":"https://img.olx.com.br/images/12/129419156255634.jpg",
+            "year":2012,
+            "price":27.900,
+            "door":4,
+            "km":0
+        },
+        {
+            "name":"Gol G5 ",
+            "img":"https://img.olx.com.br/images/37/378489493325914.jpg",
+            "year":2012,
+            "price":37.900,
+            "door":4,
+            "km":100000
+        },
+        {
+            "name":"Chevrolet",
+            "img":"https://img.olx.com.br/images/92/926443637325313.jpg",
+            "year":2020,
+            "price":81.990,
+            "door":4,
+            "km":51000
         }
     
     ],

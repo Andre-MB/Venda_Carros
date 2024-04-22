@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Vendas de Carros</title>
-    <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/resert.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="src/script/index.js" defer></script>
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/dialog.css">
+   <link rel="stylesheet" href="src/css/mediaQuerie.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="src/script/aboutUs.js" defer></script>
+        <script src="src/script/index.js" defer></script>
 </head>
 
 <body onload="api('/src/script/vehicle.json')">
@@ -19,20 +24,19 @@
             <a class="nav-itens" href="#moto">Motos</a>
             <a class="nav-itens" href="#bike">Bicicleta</a>
             <a class="nav-itens" href="#add">Adicionar</a>
-
         </nav>
         <div>
-            <button id="sign-in">
-                <i class="material-symbols-outlined">login</i>
-                login
-            </button>
-            <button id="sign-in">cadastrar</button>
-
+            <div>
+                <button id="sign-in">
+                    <i class="material-symbols-outlined">login</i>
+                    login
+                </button>
+                <button id="sign-in">cadastrar</button>
+            </div>
+            <i class="bi bi-three-dots-vertical menu-burguer"></i>
         </div>
     </header>
     <main>
-      
-
         <div class="container-filter">
             <span>
                 <h3 id="name-category">Catalogo Carros</h3>
@@ -64,119 +68,32 @@
                 <button class="material-symbols-outlined">search</button>
             </div>
         </div>
-<!---->
+
         <section class="container-vehicle">
             <div class="list-vehicle">
-               <!-- <article class="vehicle">
-                    <h3 class="name-vehicle"> Ford Mustang</h3>
-                    <div class="img-vehicle">
-                        <img src="https://mundofixa.com/wp-content/uploads/2017/10/hrv-2_0_0_0.jpg" alt="">
-                    </div>
-                    <ul class="info-vehicle">
-                        <li><i class="material-symbols-outlined">today</i>2023</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 32563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>-->
-               <!-- <article class="vehicle">
-                    <h3 class="name-vehicle"> Palio</h3>
-                    <div class="img-vehicle">
-                        <img src="http://4.bp.blogspot.com/-Xtt1WUR5jBs/U2v_10l5tMI/AAAAAAABU54/ok3guwjrGxE/s1600/Novo-Fiat-Palio-2015+(4).jpg"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2021</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 24563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>
-                <article class="vehicle">
-                    <h3 class="name-vehicle">Gol</h3>
-                    <div class="img-vehicle">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.qW2q2YlvBr4bNZ60A-XeKAHaE0&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2014</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 12563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>
-                <article class="vehicle">
-                    <h3 class="name-vehicle">Fusca</h3>
-                    <div class="img-vehicle">
-                        <img src="https://st.automobilemag.com/uploads/sites/10/2015/09/2016-Fiat-500-front-three-quarter-in-motion-11.jpg"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2018</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 14563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>
-                <article class="vehicle">
-                    <h3 class="name-vehicle">Fusca</h3>
-                    <div class="img-vehicle">
-                        <img src="https://st.automobilemag.com/uploads/sites/10/2015/09/2016-Fiat-500-front-three-quarter-in-motion-11.jpg"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2018</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 14563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>
-                <article class="vehicle">
-                    <h3 class="name-vehicle">Fusca</h3>
-                    <div class="img-vehicle">
-                        <img src="https://st.automobilemag.com/uploads/sites/10/2015/09/2016-Fiat-500-front-three-quarter-in-motion-11.jpg"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2018</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 14563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>
-                <article class="vehicle">
-                    <h3 class="name-vehicle">Fusca</h3>
-                    <div class="img-vehicle">
-                        <img src="https://st.automobilemag.com/uploads/sites/10/2015/09/2016-Fiat-500-front-three-quarter-in-motion-11.jpg"
-                            alt="">
-                    </div>
-                    <ul>
-                        <li><i class="material-symbols-outlined">today</i>2018</li>
-                        <li><i class="material-symbols-outlined">payments</i> R$ 14563,00</li>
-                    </ul>
-                    <button class="btn-add">
-                        <i class="material-symbols-outlined">pan_tool_alt </i>
-                        ver
-                    </button>
-                </article>-->
-   
             </div>
         </section>
     </main>
 
-<footer></footer>
+<footer> 
+    <h3>Contato</h3>
+ <dialog>
+    <h3>Sobre mim</h3>
+    <div class="dialog-info">
+    </div>
+    <button class="dialog-close">fechar</button>
+ </dialog>
+ <div>
+     <span class="about-us">
+        <p>Giselle</p>
+         <button class="show">Sobre mim</button>
+     </span>
+     <span class="about-us">
+        <p>Gabriel</p>
+        <button class="show">Sobre mim</button>
+     </span>
+ </div>
+</footer>
 
 </body>
 
