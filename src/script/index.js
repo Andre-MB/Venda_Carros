@@ -2,6 +2,8 @@ const nav = document.querySelectorAll('.nav-itens');
 const moto = document.querySelector('#moto');
 const car = document.querySelector('#car');
 const bike = document.querySelector('#bike');
+const searchInput = document.querySelector('#search-input');
+
 
 const nameCategory = document.querySelector('#name-category')
 
@@ -47,9 +49,26 @@ function api(url){
                 </article>
                     `
                 })
-                
                 container.appendChild(div)
 
-      console.log(data)
     })
 }
+
+    document.querySelector('.btn-search-input').addEventListener('click',()=>{
+        fetch('/src/script/vehicle.json').then(response => response.json())
+        .then(data =>{
+            data.car.map((e)=>{
+                if(searchInput.value == e.name){
+                   return console.log(`There's this vehicle with name ${searchInput.value}`)
+                }else{
+                   return console.log(`There ins't this vehicle with name ${searchInput.value}`)
+                }
+            })
+        })
+    })
+
+const btnSignIn = document.querySelector('#sign-in');
+btnSignIn.addEventListener('click',()=>{
+    window.location = '/login.html'
+
+})

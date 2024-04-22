@@ -4,7 +4,7 @@ footer{
     bottom:0 ;
     padding: 1rem 0;
     width: 100%;
-    background: rgb(14, 30, 57);
+    background: var(--bg-footer);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -27,14 +27,22 @@ footer div{
 }
 
 footer span p{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 footer button{
-    padding: .8rem;
+    padding: .5rem;
 }
 
 .show:hover{
     transform: translate(5px);
+    color: var(--bg-footer);
+    background: #dadada;
+    font-weight: 500;
+}
+
+hr{
+    border: 1px solid white;
+    height: 40px;
 }
