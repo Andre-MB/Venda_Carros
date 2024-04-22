@@ -20,6 +20,7 @@ header {
     font-weight: 500;
     flex-wrap: wrap;
     background-color: #fff;
+    z-index: 1;
 
 }
 
@@ -126,7 +127,7 @@ main {
     width: 290px;
 }
 
-.vehicle ul{
+.info-vehicle{
     width: 100%;
     display: flex;
     justify-content:space-between;

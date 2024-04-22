@@ -24,36 +24,32 @@ nav.forEach((e)=>{
 
 function api(url){
 
-    const itens = document.createElement('article');
-    const container = document.createElement('div')
-    container.classList.add('list-vehicle')
-    const sectionMain = document.querySelector('.container-vehicle');
-    itens.classList.add('vehicle')
-    container.classList.add('list-vehicle')
-
-    
+    const container = document.querySelector('.list-vehicle');
+    const div = document.createElement('div')
+    div.classList.add('info-vehicle')
     fetch(url).then(response => response.json())
     .then(data => {
         data.car.map((e)=>{
-            itens.innerHTML += `
-            <h3 class="name-vehicle">${e.name}</h3>
-            <div class="img-vehicle">
-            <img src="${e.img}" alt="">
+            div.innerHTML += `
+            <article class="vehicle">
+                    <h3 class="name-vehicle">${e.name}</h3>
+                    <div class="img-vehicle">
+                        <img src="${e.img}" alt="">
                     </div>
-                    <ul>
-                    <li><i class="material-symbols-outlined">today</i>${e.year}</li>
-                    <li><i class="material-symbols-outlined">payments</i>${e.price.toFixed(3)}</li>
+                    <ul class="info-vehicle">
+                        <li><i class="material-symbols-outlined">today</i>${e.year}</li>
+                        <li><i class="material-symbols-outlined">payments</i> R${e.price}</li>
                     </ul>
                     <button class="btn-add">
-                    <i class="material-symbols-outlined">pan_tool_alt </i>
-                    ver
+                        <i class="material-symbols-outlined">pan_tool_alt </i>
+                        ver
                     </button>
+                </article>
                     `
                     console.log(e)
                 })
                 
-        container.appendChild(itens)
-        sectionMain.appendChild(container)
+                container.appendChild(div)
 
       console.log(data)
     })
