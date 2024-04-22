@@ -8,7 +8,7 @@
 header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; /* por já te posto ele fixado no topo com "value:0" e o width "100%" não ha necessidade de por a propriedade left*/
     width: 100%;
     background-color: red;
     display: flex;

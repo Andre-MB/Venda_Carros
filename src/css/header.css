@@ -30,6 +30,11 @@ nav {
 nav a {
     color: rgb(52, 52, 52);
 }
+
+nav a:last-child{
+    color: var(--secundary-color)
+}
+
 header div{
     display: flex;
 }

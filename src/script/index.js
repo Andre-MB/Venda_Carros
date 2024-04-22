@@ -23,7 +23,6 @@ nav.forEach((e)=>{
     })
 })
 
-
 function api(url){
 
     const container = document.querySelector('.list-vehicle');
