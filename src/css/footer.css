@@ -2,7 +2,7 @@
 footer{
     position:relative;
     bottom:0 ;
-    padding: 2rem;
+    padding: 1rem 0;
     width: 100%;
     background: rgb(14, 30, 57);
     color: #fff;
@@ -11,16 +11,30 @@ footer{
     gap: 2rem;
     box-sizing: border-box;
     margin-top: 12rem;
+    align-items: center;
 }
 
 
 footer h3{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
 footer div{
     display: flex;
     gap: 2rem;
+}
+
+footer span p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer button{
+    padding: .8rem;
+}
+
+.show:hover{
+    transform: translate(5px);
 }

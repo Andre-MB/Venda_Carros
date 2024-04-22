@@ -41,8 +41,8 @@ function api(url){
                         <li><i class="bi bi-currency-dollar"></i>${e.price.toFixed(3)}</li>
                     </ul>
                     <button class="btn-add">
-                    <i class="bi bi-chevron-compact-right"></i>
-                        ver mais
+                    ver mais
+                    <i class="bi bi-hand-index"></i>
                     </button>
                 </article>
                     `

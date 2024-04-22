@@ -13,10 +13,10 @@
     --padding-button: .8rem 1.5rem;
     --bg-btn: transparent;
     --border-radius-btn: 5px;
-    --color-button-hover: rgb(43, 106, 255);
+    --color-button-hover: rgb(92, 141, 255);
     --font-size: 17px;
 
-    --secundary-color: rgb(88, 132, 253);
+    --secundary-color: rgb(64, 129, 213);
 }
 
 .active{
